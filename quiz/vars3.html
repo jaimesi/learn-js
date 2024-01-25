@@ -3,13 +3,13 @@
         <script>
             // Fix all errors in the code below
             const PI = 3.14159;
+            let area;  // Declare area outside the block to make it accessible later
             {
                 let radius = 5;
-                let area = PI * radius * radius;
-                PI = 3.0;
+                area = PI * radius * radius;  // Assign value
+                // PI = 3.0;
             }
-            console.log(area);
-
+            console.log(area);  // Log the value
         </script>
     </head>
     <body>
