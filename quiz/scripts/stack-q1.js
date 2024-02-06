@@ -8,12 +8,19 @@ class PStack {
   showId() {
     return this.#id;
   }
-
 }
 
 class PStackImpl extends PStack {
   constructor() {
     super();
+  }
+
+  get persons() {
+    return this._persons;
+  }
+
+  set persons(persons) {
+    this._persons = persons;
   }
 
   push(p) {
