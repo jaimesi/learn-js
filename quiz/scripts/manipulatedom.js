@@ -4,9 +4,11 @@ window.onload = function() {
 
 function createTRNode(colNodes) {
   let trNode = document.createElement("tr");
+
   colNodes.forEach(function(colNode) {
     trNode.appendChild(colNode);
   })
+
   return trNode;
 }
 
